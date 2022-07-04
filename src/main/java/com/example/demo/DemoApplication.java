@@ -7,13 +7,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.core.KafkaTemplate;
 
 import java.sql.SQLOutput;
+import java.util.LinkedList;
+import java.util.List;
 
 @SpringBootApplication
-public class DemoApplication {
+public class  DemoApplication {
 
 	public static void main(String[] args) throws InterruptedException {
 		SpringApplication.run(DemoApplication.class, args);
 
+
+		List<Integer> list = new LinkedList<>();
 	}
 
 	@Bean

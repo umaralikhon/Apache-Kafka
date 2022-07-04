@@ -14,4 +14,11 @@ public class KafkaTopicConfig {
                 .name("KafkaDemon")
                 .build();
     }
+
+    @Bean
+    public NewTopic myMessageTopic(){
+        return TopicBuilder
+                .name("my.message")
+                .build();
+    }
 }
